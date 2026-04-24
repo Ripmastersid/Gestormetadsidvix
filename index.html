@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIDMARKTING</title>
+
+<style>
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050d14;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* PARALLAX */
+.parallax {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+  url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff;
+}
+
+/* CARDS */
+.card {
+  background: rgba(17,47,68,0.6);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(0,212,255,0.2);
+  transition: 0.4s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* HOVER GLOW */
+.card:hover {
+  border: 1px solid #00d4ff;
+  box-shadow: 0 0 20px #00d4ff;
+  transform: scale(1.02);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media(min-width:768px){
+  .grid-3 {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* BOTÃO */
+.btn {
+  background: orange;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* PULSE */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,165,0,0.7); }
+  70% { box-shadow: 0 0 0 20px rgba(255,165,0,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,165,0,0); }
+}
+
+/* DESTAQUE */
+.highlight {
+  color: #39ff14;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.social a {
+  color: #00d4ff;
+  margin: 10px;
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="parallax">
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <h1>SIDMARKTING</h1>
+  <p>Especialista em Tráfego Pago</p>
+  <h2>Guia Profissional • Meta Ads</h2>
+</div>
+
+<!-- SEÇÃO 1 -->
+<div class="card reveal">
+  <h2>💡 Conceito Central</h2>
+  <p>Meta Ads é um sistema de leilão em tempo real. Você compete por atenção baseado em <span class="highlight">Lance, Qualidade e Relevância</span>.</p>
+</div>
+
+<div class="grid grid-3">
+  <div class="card reveal">
+    <h3>💰 Lance</h3>
+    <p>Quanto você paga pelo resultado.</p>
+  </div>
+
+  <div class="card reveal">
+    <h3>⭐ Taxa de Ação</h3>
+    <p>Probabilidade do usuário converter.</p>
+  </div>
+
+  <div class="card reveal">
+    <h3>❤️ Qualidade</h3>
+    <p>Feedback dos usuários.</p>
+  </div>
+</div>
+
+<!-- SEÇÃO 2 -->
+<div class="card reveal">
+  <h2>⚠️ Regra de Ouro</h2>
+  <p>Tráfego pago amplifica o que já existe. Se sua oferta for ruim, você vai pagar para provar isso mais rápido.</p>
+</div>
+
+<!-- SEÇÃO 3 -->
+<div class="card reveal">
+  <h2>📊 Estrutura necessária</h2>
+  <p>✔ BM organizado</p>
+  <p>✔ Conta ativa</p>
+  <p>✔ Página profissional</p>
+  <p>✔ Landing page otimizada</p>
+</div>
+
+<!-- SEÇÃO 4 -->
+<div class="card reveal">
+  <h2>⏱️ Cronograma real</h2>
+  <p><strong>1-7 dias:</strong> aprendizado</p>
+  <p><strong>8-30 dias:</strong> otimização</p>
+  <p><strong>31-90 dias:</strong> escala</p>
+</div>
+
+<!-- CTA -->
+<div style="text-align:center; margin-top:50px;">
+  <h2>Pronto para escalar suas vendas?</h2>
+  <a href="https://wa.me/5521988663114" class="btn">
+    Falar com Especialista
+  </a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+<p>📞 21 98866-3114</p>
+<p>✉️ sidnei.santos.marcketing@gmail.com</p>
+
+<div class="social">
+  <a href="https://www.facebook.com/share/1CsuU5tY9Q/">Facebook</a>
+  <a href="https://instagram.com/sydshapper">Instagram</a>
+  <a href="https://youtube.com/@sidneidossantos.7008">YouTube</a>
+  <a href="https://www.tiktok.com/@sidneisantosatv">TikTok</a>
+</div>
+
+<p>© 2025 SIDMARKTING</p>
+
+</div>
+
+</div>
+</div>
+
+<!-- ANIMAÇÃO SCROLL -->
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const visible = window.innerHeight - 100;
+
+    if(top < visible){
+      el.style.opacity = 1;
+      el.style.transform = "translateY(0)";
+    }
+  });
+});
+</script>
+
+</body>
+  </html>
